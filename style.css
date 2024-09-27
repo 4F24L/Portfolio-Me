@@ -70,6 +70,13 @@
     transition: 0.8s;
 } */
 
+.navs:hover{
+    transform: scale(1.09);
+    transition: all 0.3s linear ease;
+    color: #e84949;
+    
+}
+
 /* hero section starts  */
 
 .hero-section {
@@ -135,11 +142,12 @@
     z-index: 1;
  }
 
- /* .link{
+
+ .link{
     color:inherit;
     text-decoration:none;
   }
-   */
+  
 
  .style-btn::before {
     content: "";
