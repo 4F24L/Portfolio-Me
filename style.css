@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +44,7 @@
     font-size: 32px;
     margin-left: -0.8rem;
     transform: translateY(20%);
+    font-family: 'Spicy Rice', serif;
 }
 
 /* nav items */
@@ -217,3 +219,236 @@
 
 }
 
+
+
+
+
+
+/* Media Queries for Mobile Responsiveness */
+
+/* For devices with a max width of 1024px (tablets) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center the logo and text */
+        padding-top: 1rem;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+        margin-left: 0.5rem;
+        transform: translateY(30%);
+        transform: translateX(-15%);
+    }
+
+    .nav-items {
+        padding: 0;
+        gap: 2rem;
+        width: 100%;
+        justify-content: space-evenly; /* Icons spaced evenly */
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .hero-section-left {
+        gap: 1.5rem;
+    }
+
+    .hero-section-description {
+        width: 90%;
+    }
+
+    .user-image img {
+        width: 250px;
+        height: auto;
+    }
+
+    .style-btn {
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+}
+
+/* For devices with a max width of 768px (mobile devices) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding-top: 0.5rem; /* Adjust padding */
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center horizontally */
+        margin-bottom: 1rem; /* Add space below logo container */
+    }
+
+    .logo {
+        width: 50px; /* Adjust logo size */
+        margin-right: 0.5rem; /* Add space between logo and text */
+    }
+
+    .logo-text {
+        font-size: 24px; /* Adjust text size */
+        text-align: center; /* Center the text */
+    }
+
+    .nav-items {
+        padding: 0;
+        gap: 0; /* Remove gap for more uniform spacing */
+        width: 100%; /* Take full width of the screen */
+        justify-content: space-evenly; /* Spread icons evenly */
+        margin-top: 1rem; /* Space above icons */
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .user-image {
+        order: 1;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .hero-section-left {
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center all text and button */
+    }
+
+    .hero-section-heading {
+        font-size: 28px; /* Smaller heading */
+    }
+
+    .hero-section-subheading {
+        font-size: 30px; /* Smaller subheading */
+        line-height: 32px; /* Adjust line height for better spacing */
+    }
+
+    .hero-section-description {
+        width: 90%; /* Keep the width */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .user-image img {
+        width: 220px;
+        height: auto;
+    }
+
+    .style-btn {
+        margin: 0 auto; /* Center the button horizontally */
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For devices with a max width of 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        padding-top: 0.5rem;
+        flex-direction: column;
+        align-items: center; /* Center the logo and text */
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .nav-items {
+        padding: 0;
+        gap: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .user-image {
+        order: 1;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .hero-section-left {
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section-heading {
+        font-size: 24px; /* Further smaller heading */
+    }
+
+    .hero-section-subheading {
+        font-size: 26px; /* Further smaller subheading */
+        line-height: 28px; /* Adjust line height for better spacing */
+    }
+
+    .hero-section-description {
+        font-size: 12px; /* Adjust font size for small mobile */
+    }
+
+    .user-image img {
+        width: 180px;
+        height: auto;
+    }
+
+    .style-btn {
+        margin: 0 auto; /* Center the button horizontally */
+        padding: 5px 18px;
+        font-size: 12px;
+    }
+}
